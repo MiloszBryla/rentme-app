@@ -1,0 +1,40 @@
+
+Insert into users (first_name, last_name, email, password, address, city, is_admin, post_code, lat, lng,enabled,role)
+values ('Andrzej', 'Kowalski', 'k@gmail.com', 'password', 'Wrocławska 50', 'Kraków', false, '30-011', 50.0781919, 19.9216883,1,'ADMIN');
+Insert into users (first_name, last_name, email, password, address, city, is_admin, post_code, lat, lng,enabled,role)
+values ('Karol', 'Krasny', 'ka@gmail.com', 'password', 'Na Błoniach 7', 'Kraków', false, '30-213', 50.0579132, 19.903802,1,'ADMIN');
+Insert into users (first_name, last_name, email, password, address, city, is_admin, post_code, lat, lng,enabled,role)
+values ('Natalia', 'Owalna', 'o@gmail.com', 'password', 'Aleja Pokoju 67', 'Kraków', false, '31-580', 50.0619676, 19.9877416,1,'ADMIN');
+Insert into users (first_name, last_name, email, password, address, city, is_admin, post_code, lat, lng,enabled,role)
+values ('Antoni', 'Botanik', 'b@gmail.com', 'password', 'Dobrego Pasterza 118', 'Kraków', false, '31-416', 50.0887017, 19.9734117,1,'ADMIN');
+Insert into users (first_name, last_name, email, password, address, city, is_admin, post_code, lat, lng,enabled,role)
+values ('Jacek', 'Zawalny', 'z@gmail.com', 'password', 'Kapelanka 56', 'Kraków', false, '30-347', 50.0325053, 19.9235243,1,'ADMIN');
+Insert into users (first_name, last_name, email, password, address, city, is_admin, post_code, lat, lng,enabled,role)
+values ('Anna', 'Raźna', 'r@gmail.com', 'password', 'Kopalina 12', 'Kraków', false, '30-228', 50.0579132, 19.903802,1,'ADMIN');
+
+
+INSERT INTO categories VALUES (default, 'Home equipment', 'home-equipment.png');
+INSERT INTO categories VALUES (default, 'Adventure', 'adventure.jpg');
+INSERT INTO categories VALUES (default, 'Instruments', 'instruments.png');
+INSERT INTO categories VALUES (default, 'Winter', '1.jpg');
+INSERT INTO categories VALUES (default, 'Cars', 'cars.jpg');
+INSERT INTO categories VALUES (default, 'Scooters', 'scooter.jpg');
+INSERT INTO categories VALUES (default, 'Cameras', 'camera.jpg');
+
+Insert into items (description,name,pic_url,price,category_id,owner_id) values ('rower','bike', '/images/racebike.jpg',200, 6 ,1);
+insert into items (description, name, pic_url,  price, category_id, owner_id) values('test', 'Fat bike', '/images/fatbike.jpg', 25,  6,  2);
+insert into items (description, name, pic_url,  price, category_id, owner_id) values('test','Children bike', '/images/childrenbike.jpg', 100, 6,  3);
+insert into items (description, name, pic_url,  price, category_id, owner_id) values('test', 'Bmx bike', '/images/bmx.jpg', 99,  6,  4);
+insert into items (description, name, pic_url,  price, category_id, owner_id) values('test', 'Dutch bike', '/images/dutchbike.jpg', 15,  6,  2);
+insert into items (description, name, pic_url,  price, category_id, owner_id) values( 'test', 'Electric bike',  '/images/electricbike.jpg', 11,  6,  2);
+insert into items (description, name, pic_url,  price, category_id, owner_id) values( 'test',  'Golden bike', '/images/goldenbike.jpg', 20, 6,  5);
+insert into items (description, name, pic_url,  price, category_id, owner_id) values('test', 'Hand bike',  '/images/handbike.jpg', 10, 6,  2);
+insert into items (description, name, pic_url,  price, category_id, owner_id) values('test', 'Lowrider bike', '/images/lowriderbike.jpg', 60,  6,  6);
+insert into items (description, name, pic_url,  price, category_id, owner_id) values('test', 'Mono bike', '/images/monobike.jpg', 11, 6,   2);
+insert into items (description, name, pic_url,  price, category_id, owner_id) values('test','Triathlon bike',  '/images/triathlonbike.jpg', 22,  6,  6);
+insert into items (description, name, pic_url,  price, category_id, owner_id) values('test', 'Race bike', '/images/racebike.jpg', 20,  6,  2);
+INSERT INTO items (description, name, pic_url,  price, category_id, owner_id)  VALUES ('This is very useful drill to your home! ', 'Drill - BOSH',  '/images/drill-battery.jpg', 20,  1, 1);
+
+insert into reservations (item_id, renter_id, date_start, date_end) values (1, 1, '2020-10-16 00:00:00', '2020-10-18 00:00:00');
+insert into reservations (item_id, renter_id, date_start, date_end) values (2, 2, '2020-10-16 00:00:00', '2020-10-18 00:00:00');
+insert into reservations (item_id, renter_id, date_start, date_end) values (3, 2, '2020-10-16 00:00:00', '2020-10-18 00:00:00');
