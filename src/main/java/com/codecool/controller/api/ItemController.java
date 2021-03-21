@@ -1,6 +1,5 @@
 package com.codecool.controller.api;
 import com.codecool.converter.ItemConverter;
-import com.codecool.model.Item;
 import com.codecool.modelDTO.ItemDTO;
 import com.codecool.modelDTO.ItemForListDTO;
 import com.codecool.service.ItemService;
